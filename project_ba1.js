@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // สุ่มและเล่นเสียง
             const randomSoundPath = getRandomSound(koyukiSounds);
             const sound = new Audio(randomSoundPath);
-            sound.volume = 0.2;
+            sound.volume = 0.7;
             sound.play();
             
             // ลบภาพหลังจากอนิเมชันจบ
@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // สุ่มและเล่นเสียง
             const randomSoundPath = getRandomSound(reisaSounds);
             const sound = new Audio(randomSoundPath);
-            sound.volume = 0.2;
+            sound.volume = 0.7;
             sound.play();
             
             // ลบภาพหลังจากอนิเมชันจบ
