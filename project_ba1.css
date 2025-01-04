@@ -1,0 +1,102 @@
+/* Custom styles for navbar */
+.navbar {
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Custom styles for select dropdown */
+.form-select {
+    width: auto;
+    min-width: 150px;
+}
+
+/* Custom styles for sound button */
+#sound-toggle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+#sound-toggle:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.sound-icon {
+    transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-select {
+        min-width: 120px;
+    }
+}
+
+/* Custom button colors */
+.btn-bright-success {
+    background-color: #00ff44;
+    border-color: #00ff44;
+    color: white;
+}
+
+.btn-bright-success:hover {
+    background-color: #00e63c;
+    border-color: #00e63c;
+    color: white;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease-in-out;
+}
+
+/* กำหนดรูปพื้นหลังสำหรับแต่ละตัวละคร */
+.bg-mika {
+    background-image: url('https://steamuserimages-a.akamaihd.net/ugc/2006950725040520981/4B97FCFD54292499F475FC26B023F7BFDFF0FBD0/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false')
+}
+
+.bg-koyuki {
+    background-image: url('https://steamuserimages-a.akamaihd.net/ugc/2029473162814419636/135C8C84A90B7D7894D3B7E2946737CDA26D15EF/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false')
+}
+
+.bg-reisa {
+    background-image: url('https://steamuserimages-a.akamaihd.net/ugc/2049745064589579668/C50B9988B6517EA0C65FB4FB8B772EA0AFECF18B/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false')
+}
+
+.bg-momoi {
+    background-image: url('https://steamuserimages-a.akamaihd.net/ugc/2493383874363044016/05905111C3423225660D5719AA03C2A510B69C73/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false')
+}
+
+/* เพิ่ม style สำหรับภาพที่จะแสดงเมื่อคลิก */
+.click-image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    pointer-events: none;
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+}
