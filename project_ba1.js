@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // สุ่มและเล่นเสียง
             const randomSoundPath = getRandomSound(mikaSounds);
             const sound = new Audio(randomSoundPath);
-            sound.volume = 0.2;
+            sound.volume = 0.5;
             sound.play();
             
             // ลบภาพหลังจากอนิเมชันจบ
